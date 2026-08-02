@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
- <title> aalans page </title>
-    </head>
-    <body>
-        <h1> hello web! </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pg2.html">About</a></li>
-                <li><a href="pg3.html">Contact</a></li>
-            </ul>
-        </nav>
-        <p> this is my web page 3 </p>
-        <img src="images/pg3.png" alt="page 3">
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aalan's Page | Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Aalan's Studio</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pg2.html">About</a></li>
+          <li><a class="active" href="pg3.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Contact</p>
+          <h1>Let’s connect and keep the project moving.</h1>
+          <p>This final page brings together the same visual language and simple navigation.</p>
+          <a class="button" href="index.html">Back Home</a>
+        </div>
+        <div class="card-image">
+          <img src="template maybe/pg3.png" alt="Contact page design reference" />
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="card">
+          <h2>Contact Details</h2>
+          <p>Use this section to add contact information, social links, or a form.</p>
+        </article>
+        <article class="card">
+          <h2>Friendly Feel</h2>
+          <p>The tone stays approachable while the design remains structured and polished.</p>
+        </article>
+        <article class="card">
+          <h2>Final Touch</h2>
+          <p>Consistent cards and spacing help tie the whole site together.</p>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>

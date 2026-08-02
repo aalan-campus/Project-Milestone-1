@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
- <title> aalans page </title>
-    </head>
-    <body>
-        <h1> hello web! </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pg2.html">About</a></li>
-                <li><a href="pg3.html">Contact</a></li>
-            </ul>
-        </nav>
-        <p> this is my web page main </p>
-        <img src="images/main.png" alt="main page">
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aalan's Page | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Aalan's Studio</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="pg2.html">About</a></li>
+          <li><a href="pg3.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Milestone One</p>
+          <h1>Welcome to my polished web project.</h1>
+          <p>This homepage uses a calm color palette, paired fonts, and clear spacing to create a more professional layout.</p>
+          <a class="button" href="pg2.html">Explore More</a>
+        </div>
+        <div class="card-image">
+          <img src="template maybe/main.png" alt="Home page design reference" />
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="card">
+          <h2>Design Focus</h2>
+          <p>The layout includes a strong hero area, thoughtful spacing, and balanced page sections.</p>
+        </article>
+        <article class="card">
+          <h2>Shared Style</h2>
+          <p>Each page uses the same stylesheet so the experience stays consistent across the site.</p>
+        </article>
+        <article class="card">
+          <h2>Visual Balance</h2>
+          <p>The color choices and font pairing help the content feel welcoming and well organized.</p>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>

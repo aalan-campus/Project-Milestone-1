@@ -1,18 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
- <title> aalans page </title>
-    </head>
-    <body>
-        <h1> hello web! </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pg2.html">About</a></li>
-                <li><a href="pg3.html">Contact</a></li>
-            </ul>
-        </nav>
-        <p> this is my web page 2 </p>
-        <img src="images/pg2.png" alt="page 2">
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aalan's Page | About</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Aalan's Studio</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="pg2.html">About</a></li>
+          <li><a href="pg3.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">About This Page</p>
+          <h1>Creating a clear, friendly layout.</h1>
+          <p>This page highlights the structure and content areas that connect the site together.</p>
+          <a class="button" href="pg3.html">Go to Contact</a>
+        </div>
+        <div class="card-image">
+          <img src="template maybe/pg2.png" alt="About page design reference" />
+        </div>
+      </section>
+
+      <section class="content-grid">
+        <article class="card">
+          <h2>Content Planning</h2>
+          <p>The page uses the same visual rhythm and spacing as the rest of the project.</p>
+        </article>
+        <article class="card">
+          <h2>Page Structure</h2>
+          <p>Sections are arranged to keep reading easy and the design balanced.</p>
+        </article>
+        <article class="card">
+          <h2>Image Placement</h2>
+          <p>Reference images are used to frame each page and support the overall theme.</p>
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
