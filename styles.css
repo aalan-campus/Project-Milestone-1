@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 :root {
-  --navy: #17324d;
-  --sage: #8fb7a1;
-  --cream: #f7efe6;
-  --accent: #d77c51;
-  --text: #23374d;
-  --shadow: rgba(23, 50, 77, 0.14);
+  --navy: #0f172a;
+  --sage: #7dd3b0;
+  --cream: #e2e8f0;
+  --accent: #f59e0b;
+  --text: #e2e8f0;
+  --shadow: rgba(2, 6, 23, 0.45);
+  --panel: #111827;
+  --panel-2: #1f2937;
 }
 
 * {
@@ -18,7 +20,7 @@ body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: var(--text);
-  background: linear-gradient(135deg, var(--cream) 0%, #ffffff 100%);
+  background: linear-gradient(135deg, #020617 0%, #111827 100%);
 }
 
 h1,
@@ -26,7 +28,7 @@ h2,
 h3 {
   font-family: 'Playfair Display', serif;
   margin-top: 0;
-  color: var(--navy);
+  color: var(--cream);
 }
 
 img {
@@ -46,12 +48,13 @@ a {
 }
 
 .site-header {
-  background: var(--navy);
+  background: #020617;
   color: var(--cream);
   padding: 16px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .brand {
@@ -77,7 +80,7 @@ a {
 .nav-links a:hover,
 .nav-links a.active {
   background: var(--sage);
-  color: var(--navy);
+  color: #020617;
 }
 
 #main-content {
@@ -90,10 +93,11 @@ a {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 24px;
-  background: #ffffff;
+  background: var(--panel);
   border-radius: 24px;
   padding: 32px;
   box-shadow: 0 16px 40px var(--shadow);
+  align-items: stretch;
 }
 
 .eyebrow {
@@ -128,7 +132,7 @@ a {
 }
 
 .card {
-  background: #ffffff;
+  background: var(--panel-2);
   padding: 24px;
   border-radius: 20px;
   box-shadow: 0 12px 24px var(--shadow);
@@ -136,6 +140,26 @@ a {
 
 .card h2 {
   margin-bottom: 8px;
+}
+
+.hero-panel {
+  background: linear-gradient(145deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-panel-top h2 {
+  margin-bottom: 4px;
+}
+
+.hero-panel img {
+  border-radius: 14px;
+  height: 260px;
+  object-fit: cover;
 }
 
 .card-image {
